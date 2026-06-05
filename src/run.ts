@@ -88,7 +88,14 @@ async function runSetup(): Promise<null | Error> {
       cp
         .execFileSync(
           binaryPath,
-          ["registry", "login", bufDomain, "--username", bufUser, "--token-stdin"],
+          [
+            "registry",
+            "login",
+            bufDomain,
+            "--username",
+            bufUser,
+            "--token-stdin",
+          ],
           { input: bufAPIToken },
         )
         .toString(),

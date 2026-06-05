@@ -1,6 +1,6 @@
 {
   "name": "buf-setup",
-  "version": "1.6.0",
+  "version": "1.50.0",
   "author": "step-security",
   "scripts": {
     "build": "esbuild --minify --bundle --sourcemap '--define:process.env.NODE_ENV=\"production\"' --outdir=dist --platform=node --target=node24 ./src/main.ts",
