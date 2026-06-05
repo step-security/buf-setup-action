@@ -77,7 +77,7 @@ async function runSetup(): Promise<null | Error> {
   }
 
   core.info(`Successfully setup buf version ${version}`);
-  core.info(cp.execSync(`${binaryPath} --version`).toString());
+  core.info(cp.execFileSync(binaryPath, ["--version"]).toString());
 
   const bufDomain = core.getInput("buf_domain");
   const bufUser = core.getInput("buf_user");
@@ -86,8 +86,9 @@ async function runSetup(): Promise<null | Error> {
     core.info(`buf_user and buf_token supplied, logging in...`);
     core.info(
       cp
-        .execSync(
-          `${binaryPath} registry login ${bufDomain} --username ${bufUser} --token-stdin`,
+        .execFileSync(
+          binaryPath,
+          ["registry", "login", bufDomain, "--username", bufUser, "--token-stdin"],
           { input: bufAPIToken },
         )
         .toString(),
