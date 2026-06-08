@@ -171,8 +171,6 @@ steps:
 ```
 
 [action]: https://docs.github.com/actions
-[buf-action]: https://github.com/bufbuild/buf-action
-[buf-action-migration]: https://github.com/bufbuild/buf-action/blob/main/MIGRATION.md#buf-setup-action
 [bsr]: https://docs.buf.build/bsr
 [buf-breaking]: https://github.com/marketplace/actions/buf-breaking
 [buf-cli]: https://github.com/bufbuild/buf

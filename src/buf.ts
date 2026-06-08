@@ -1,4 +1,5 @@
 // Copyright 2020-2025 Buf Technologies, Inc.
+// Copyright 2026 StepSecurity
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -125,7 +126,6 @@ async function getDownloadURL(
   // https://github.com/bufbuild/buf/blob/8255257bd94c9f1b5faa27242211c5caad05be79/make/buf/scripts/release.bash#L102
   let assetName = "";
 
-  // See: https://github.com/bufbuild/buf-setup-action/issues/166
   if (platform === "Linux" && architecture === "arm64") {
     architecture = "aarch64";
   }
