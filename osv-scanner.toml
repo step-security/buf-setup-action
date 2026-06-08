@@ -1,0 +1,19 @@
+[[IgnoredVulns]]
+id = "GHSA-2mjp-6q6p-2qxm"
+reason = "Vulnerability is in transitive dependency undici@5.29.0 (via @actions/github). This action only makes outbound requests to trusted endpoints and does not act as a server, making request smuggling unexploitable."
+
+[[IgnoredVulns]]
+id = "GHSA-4992-7rv2-5pvq"
+reason = "Vulnerability is in transitive dependency undici@5.29.0 (via @actions/github). This action only makes outbound requests to trusted endpoints and does not act as a server, making this unexploitable."
+
+[[IgnoredVulns]]
+id = "GHSA-g9mf-h72j-4rw9"
+reason = "Vulnerability is in transitive dependency undici@5.29.0 (via @actions/github). This action only makes outbound requests to trusted endpoints and does not act as a server, making SSRF unexploitable."
+
+[[IgnoredVulns]]
+id = "GHSA-v9p9-hfj2-hcw8"
+reason = "Vulnerability is in transitive dependency undici@5.29.0 (via @actions/github). This action only makes outbound requests to trusted endpoints and does not act as a server, making this unexploitable."
+
+[[IgnoredVulns]]
+id = "GHSA-vrm6-8vpv-qv8q"
+reason = "Vulnerability is in transitive dependency undici@5.29.0 (via @actions/github). This action only makes outbound requests to trusted endpoints and does not act as a server, making request smuggling unexploitable."
