@@ -1,0 +1,18 @@
+{
+   "schema_version": "1",
+   "onboarding_type": "copied",
+   "archived": false,
+   "maintained_action_name": "step-security/buf-setup-action",
+   "upstream_full_repo_name": "bufbuild/buf-setup-action",
+   "action_type": "node",
+   "last_release": {
+     "tag_name": "v1.50.0",
+     "created_at": "2026-06-08T05:42:34Z",
+     "published_at": "2026-06-08T14:56:32Z"
+   },
+   "sync": {
+     "ignore_presets": [
+       "defaults_v1"
+     ]
+   }
+ }
