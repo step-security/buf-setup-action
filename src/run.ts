@@ -97,7 +97,9 @@ async function runSetup(): Promise<null | Error> {
             bufUser,
             "--token-stdin",
           ],
-          { input: bufAPIToken },
+          {
+            input: bufAPIToken,
+          },
         )
         .toString(),
     );
